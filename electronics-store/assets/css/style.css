@@ -68,6 +68,9 @@ button:focus-visible {
   padding: 0 24px;
 }
 
+/* Атрибут hidden должен скрывать элемент, даже если для него задан display */
+[hidden] { display: none !important; }
+
 .visually-hidden {
   position: absolute !important;
   width: 1px; height: 1px;
@@ -202,7 +205,6 @@ button:focus-visible {
   border-radius: var(--radius);
   overflow: hidden;
 }
-.card[hidden] { display: none; }
 
 .card__img {
   width: 100%;
@@ -353,9 +355,11 @@ button:focus-visible {
 .site-footer__inner {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end; /* меню подвала на уровне последней строки контактов: порядок Tab сверху вниз */
   flex-wrap: wrap;
   gap: 24px;
 }
+.site-footer__inner > div p:last-child { margin-bottom: 0; }
 .site-footer__brand { font-size: 20px; font-weight: 700; color: #fff; }
 .site-footer__links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 .site-footer__copy {
