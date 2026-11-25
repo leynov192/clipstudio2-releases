@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог — ВольтМаркет, магазин электроники</title>
+  <meta name="description" content="Каталог ВольтМаркета: смартфоны, ноутбуки, наушники и колонки с ценами и характеристиками.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__icon" src="assets/img/logo.svg" alt="" width="40" height="40">
+        <span class="logo__text">ВольтМаркет</span>
+      </a>
+      <a class="site-header__phone" href="tel:+78001234567">8 800 123-45-67</a>
+      <nav class="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a class="nav__link" href="detail.html">Товар дня</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container page">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol>
+          <li><a href="index.html">Главная</a></li>
+          <li aria-current="page">Каталог</li>
+        </ol>
+      </nav>
+
+      <h1 class="page__title">Каталог электроники</h1>
+
+      <section class="filter" aria-labelledby="filter-title">
+        <h2 id="filter-title" class="visually-hidden">Фильтр по категориям</h2>
+        <div class="filter__buttons" role="group" aria-label="Категория">
+          <button class="filter__btn" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filter__btn" type="button" data-filter="phones" aria-pressed="false">Смартфоны</button>
+          <button class="filter__btn" type="button" data-filter="laptops" aria-pressed="false">Ноутбуки</button>
+          <button class="filter__btn" type="button" data-filter="audio" aria-pressed="false">Аудио</button>
+        </div>
+        <p id="catalog-count" class="filter__count" role="status">Показано товаров: 6</p>
+      </section>
+
+      <section aria-label="Товары">
+        <div class="grid catalog-grid">
+          <article class="card" data-category="phones">
+            <img class="card__img" src="assets/img/nova-x5.svg" alt="Смартфон Nova X5 синего цвета с тройной камерой" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Смартфоны</p>
+              <h2 class="card__title">Смартфон Nova X5</h2>
+              <p class="card__text">Экран AMOLED 120 Гц, тройная камера 50 Мп, 256 ГБ памяти.</p>
+              <div class="card__footer">
+                <p class="card__price">34 990 ₽</p>
+                <a class="btn" href="detail.html?id=nova-x5">Подробнее<span class="visually-hidden">: Смартфон Nova X5</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="phones">
+            <img class="card__img" src="assets/img/orbit-lite.svg" alt="Смартфон Orbit Lite зелёного цвета с двойной камерой" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Смартфоны</p>
+              <h2 class="card__title">Смартфон Orbit Lite</h2>
+              <p class="card__text">Лёгкий смартфон для учёбы: 128 ГБ, батарея 5000 мА·ч.</p>
+              <div class="card__footer">
+                <p class="card__price">19 990 ₽</p>
+                <a class="btn" href="detail.html?id=orbit-lite">Подробнее<span class="visually-hidden">: Смартфон Orbit Lite</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="laptops">
+            <img class="card__img" src="assets/img/vector-pro.svg" alt="Ноутбук Vector Pro 15 в сером корпусе" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Ноутбуки</p>
+              <h2 class="card__title">Ноутбук Vector Pro 15</h2>
+              <p class="card__text">12 ядер, 16 ГБ DDR5, SSD 1 ТБ, дискретная видеокарта.</p>
+              <div class="card__footer">
+                <p class="card__price">89 990 ₽</p>
+                <a class="btn" href="detail.html?id=vector-pro">Подробнее<span class="visually-hidden">: Ноутбук Vector Pro 15</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="laptops">
+            <img class="card__img" src="assets/img/vector-air.svg" alt="Лёгкий ноутбук Vector Air 13 в золотистом корпусе" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Ноутбуки</p>
+              <h2 class="card__title">Ноутбук Vector Air 13</h2>
+              <p class="card__text">Вес 1,2 кг, до 14 часов без подзарядки, без вентилятора.</p>
+              <div class="card__footer">
+                <p class="card__price">64 990 ₽</p>
+                <a class="btn" href="detail.html?id=vector-air">Подробнее<span class="visually-hidden">: Ноутбук Vector Air 13</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="audio">
+            <img class="card__img" src="assets/img/pulse-anc.svg" alt="Чёрные беспроводные наушники Pulse ANC" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Аудио</p>
+              <h2 class="card__title">Наушники Pulse ANC</h2>
+              <p class="card__text">Активное шумоподавление, до 40 часов работы.</p>
+              <div class="card__footer">
+                <p class="card__price">12 490 ₽</p>
+                <a class="btn" href="detail.html?id=pulse-anc">Подробнее<span class="visually-hidden">: Наушники Pulse ANC</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="audio">
+            <img class="card__img" src="assets/img/boom-mini.svg" alt="Оранжевая портативная колонка Boom Mini" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Аудио</p>
+              <h2 class="card__title">Колонка Boom Mini</h2>
+              <p class="card__text">Защита от воды IP67, 10 Вт, до 12 часов работы.</p>
+              <div class="card__footer">
+                <p class="card__price">5 990 ₽</p>
+                <a class="btn" href="detail.html?id=boom-mini">Подробнее<span class="visually-hidden">: Колонка Boom Mini</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="site-footer__brand">ВольтМаркет</p>
+        <p>г. Москва, ул. Электродная, д. 12</p>
+        <p>Ежедневно с 9:00 до 21:00</p>
+        <p><a href="tel:+78001234567">8 800 123-45-67</a> — звонок бесплатный</p>
+      </div>
+      <nav aria-label="Меню в подвале">
+        <ul class="site-footer__links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="detail.html">Товар дня</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="container site-footer__copy">© 2026 ВольтМаркет. Учебный проект, бренды товаров вымышленные.</p>
+  </footer>
+
+  <script src="assets/js/catalog.js"></script>
+</body>
+</html>

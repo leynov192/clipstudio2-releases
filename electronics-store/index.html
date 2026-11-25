@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная — ВольтМаркет, магазин электроники</title>
+  <meta name="description" content="ВольтМаркет — смартфоны, ноутбуки и аудиотехника с доставкой за 1 день и гарантией 1 год.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__icon" src="assets/img/logo.svg" alt="" width="40" height="40">
+        <span class="logo__text">ВольтМаркет</span>
+      </a>
+      <a class="site-header__phone" href="tel:+78001234567">8 800 123-45-67</a>
+      <nav class="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" aria-current="page">Главная</a></li>
+          <li><a class="nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="nav__link" href="detail.html">Товар дня</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 id="hero-title" class="hero__title">Электроника для учёбы, работы и отдыха</h1>
+          <p class="hero__lead">Смартфоны, ноутбуки и аудиотехника. Доставка по городу за 1 день, гарантия 1 год на каждый товар.</p>
+          <a class="btn btn--large" href="catalog.html">Перейти в каталог</a>
+        </div>
+        <img class="hero__img" src="assets/img/hero.svg" alt="Ноутбук, смартфон и наушники из ассортимента магазина" width="400" height="300">
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="categories-title">
+      <div class="container">
+        <h2 id="categories-title" class="section__title">Категории</h2>
+        <ul class="categories">
+          <li>
+            <a class="category" href="catalog.html?cat=phones">
+              <span class="category__name">Смартфоны</span>
+              <span class="category__count">2 модели · от 19 990 ₽</span>
+            </a>
+          </li>
+          <li>
+            <a class="category" href="catalog.html?cat=laptops">
+              <span class="category__name">Ноутбуки</span>
+              <span class="category__count">2 модели · от 64 990 ₽</span>
+            </a>
+          </li>
+          <li>
+            <a class="category" href="catalog.html?cat=audio">
+              <span class="category__name">Аудио</span>
+              <span class="category__count">2 модели · от 5 990 ₽</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="hits-title">
+      <div class="container">
+        <h2 id="hits-title" class="section__title">Хиты продаж</h2>
+        <div class="grid">
+          <article class="card">
+            <img class="card__img" src="assets/img/nova-x5.svg" alt="Смартфон Nova X5 синего цвета с тройной камерой" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Смартфоны</p>
+              <h3 class="card__title">Смартфон Nova X5</h3>
+              <p class="card__text">Экран AMOLED 120 Гц, тройная камера 50 Мп, 256 ГБ памяти.</p>
+              <div class="card__footer">
+                <p class="card__price">34 990 ₽</p>
+                <a class="btn" href="detail.html?id=nova-x5">Подробнее<span class="visually-hidden">: Смартфон Nova X5</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="assets/img/vector-pro.svg" alt="Ноутбук Vector Pro 15 в сером корпусе" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Ноутбуки</p>
+              <h3 class="card__title">Ноутбук Vector Pro 15</h3>
+              <p class="card__text">12 ядер, 16 ГБ DDR5, SSD 1 ТБ, дискретная видеокарта.</p>
+              <div class="card__footer">
+                <p class="card__price">89 990 ₽</p>
+                <a class="btn" href="detail.html?id=vector-pro">Подробнее<span class="visually-hidden">: Ноутбук Vector Pro 15</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="assets/img/pulse-anc.svg" alt="Чёрные беспроводные наушники Pulse ANC" width="400" height="300">
+            <div class="card__body">
+              <p class="card__cat">Аудио</p>
+              <h3 class="card__title">Наушники Pulse ANC</h3>
+              <p class="card__text">Активное шумоподавление, до 40 часов работы.</p>
+              <div class="card__footer">
+                <p class="card__price">12 490 ₽</p>
+                <a class="btn" href="detail.html?id=pulse-anc">Подробнее<span class="visually-hidden">: Наушники Pulse ANC</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 id="benefits-title" class="section__title">Почему покупают у нас</h2>
+        <ul class="benefits">
+          <li class="benefit">
+            <h3 class="benefit__title">Доставка за 1 день</h3>
+            <p>Привезём заказ по городу на следующий день. Бесплатно — от 10 000 ₽.</p>
+          </li>
+          <li class="benefit">
+            <h3 class="benefit__title">Гарантия 1 год</h3>
+            <p>На всю технику. Обмен в течение 14 дней, если товар не подошёл.</p>
+          </li>
+          <li class="benefit">
+            <h3 class="benefit__title">Оплата при получении</h3>
+            <p>Наличными или картой курьеру. Можно проверить товар перед оплатой.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="site-footer__brand">ВольтМаркет</p>
+        <p>г. Москва, ул. Электродная, д. 12</p>
+        <p>Ежедневно с 9:00 до 21:00</p>
+        <p><a href="tel:+78001234567">8 800 123-45-67</a> — звонок бесплатный</p>
+      </div>
+      <nav aria-label="Меню в подвале">
+        <ul class="site-footer__links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="detail.html">Товар дня</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="container site-footer__copy">© 2026 ВольтМаркет. Учебный проект, бренды товаров вымышленные.</p>
+  </footer>
+</body>
+</html>
